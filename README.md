@@ -1,3 +1,6 @@
+Local PDF Chat Application with Mistral 7B LLM, Langchain, Ollama, and Streamlit
+A PDF chatbot is a chatbot that can answer questions about a PDF file. It can do this by using a large language model (LLM) to understand the user's query and then searching the PDF file for the relevant information. The application uses the concept of Retrieval-Augmented Generation (RAG) to generate responses in the context of a particular document. RAG applications augment their generation capabilities by retrieving relevant information from an external knowledge base. This allows RAG applications to produce more informative and comprehensive responses to a wider range of prompts and questions.
+
 Running Mistral 7B Locally using Ollama 🦙
 Ollama allows you to run open-source large language models, such as Llama 2, locally. It bundles model weights, configuration, and data into a single package, defined by a Modelfile, optimizing setup and configuration details, including GPU usage.
 
@@ -14,11 +17,4 @@ Utilize Docker Image: Windows users can access Ollama by using the Docker image 
 Now you can easily use Mistral in the command line (CMD) using the following command:
 
 docker exec -it ollama ollama run mistral
-Usage
-NOTE: First install Ollama in docker and run mistral as stated above
-Clone this repository:
-git clone https://github.com/SonicWarrior1/pdfchat.git
-Install all the depenedencies :
-pip install -r requirements.txt
-Open terminal and run the following command:
-streamlit run app.py
+
